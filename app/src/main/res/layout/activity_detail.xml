@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_photo"
+        android:contentDescription="@string/user_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+        app:layout_constraintVertical_bias="0.03"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_item_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        tools:text="username"
+        android:textColor="#4C4C4C"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:text="name"
+        android:textColor="#474747"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img_item_photo"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_photo" />
+
+    <TextView
+        android:id="@+id/tv_item_follower"
+        style="@style/number"
+        android:layout_width="0dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="sans-serif-black"
+        tools:text="aaa"
+        app:layout_constraintBottom_toBottomOf="@+id/img_item_photo"
+        app:layout_constraintStart_toEndOf="@+id/img_item_photo"
+        app:layout_constraintTop_toTopOf="@+id/img_item_photo"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/tv_item_following"
+        style="@style/number"
+        android:layout_width="0dp"
+        android:layout_marginStart="44dp"
+        tools:text="aaa"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_follower"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_follower"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_follower"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_item_location"
+        style="@style/codeDescription"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_company"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_company"
+        tools:text="location" />
+
+    <TextView
+        android:id="@+id/tv_item_company"
+        style="@style/codeDescription"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+        tools:text="company" />
+
+    <TextView
+        android:id="@+id/tv_item_profession"
+        style="@style/codeDescription"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_location"
+        tools:text="Profesi" />
+
+    <TextView
+        android:id="@+id/tv_item_repository"
+        style="@style/number"
+        android:layout_width="0dp"
+        android:layout_marginStart="44dp"
+        tools:text="aaa"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_following"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_following"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_following"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/followers"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_follower"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_follower"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_follower" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_following"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_following"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_following" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repository"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_repository"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_repository"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_repository" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
