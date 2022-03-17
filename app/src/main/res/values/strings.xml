@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SecondSubmission</string>
+    <string name="search">Search</string>
+    <string name="avatar">avatar</string>
+    <string name="search_hint">Masukan Username</string>
+    <string name="github_user_search">Github User Search</string>
+    <string name="deskripsi_github_user">Silahkan Masukan Username\ndi dalam search item pada toolbar</string>
+
+    <string name="tab1">Followers</string>
+    <string name="tab2">Following</string>
+</resources>
